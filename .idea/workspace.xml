@@ -33,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.DFS">
+  <component name="RunManager" selected="Python.5_3">
     <configuration name="3_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Codingtest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,8 +141,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.DFS" />
         <item itemvalue="Python.5_3" />
+        <item itemvalue="Python.DFS" />
         <item itemvalue="Python.BFS" />
         <item itemvalue="Python.3_2" />
       </list>
