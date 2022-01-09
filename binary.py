@@ -11,7 +11,7 @@ def binary_search1(array,target,start,end):
     if array[mid]==target:
         return mid
     elif array[mid]>target:
-        return binary_search1(array,target,start,end-1)
+        return binary_search1(array,target,start,mid-1)
     elif array[mid]<target:
         return binary_search1(array,target,mid+1,end)
 
