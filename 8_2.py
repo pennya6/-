@@ -1,6 +1,5 @@
 #1로 만들기
 x=int(input())
-count=0
 # while x>=1:
 #     if x==1:
 #         print(count)
@@ -17,21 +16,29 @@ count=0
 #         x-=1
 #         count += 1
 
-new_x=1
-#보텀업 방식 사용
-while new_x<=x:
-    if new_x==x:
-        print(count)
-        break
-    if new_x*5!=x and new_x*5<x:
-        new_x*=5
-        count+=1
-    elif new_x*3!=x and new_x*3<x:
-        new_x*=3
+def dynamic(x):
+    count=0
+    if x==1:
+        return count
+    if x%5==0:
+        print(x)
+        count=count+1
+        return dynamic(x/5)
+    elif x%3==0:
         count += 1
-    elif new_x*2!=x and new_x*3<x:
-        new_x*=2
+        return dynamic(x/3)
+    elif x%2==0:
         count += 1
-    elif new_x+1!=x and new_x+1<x:
-        new_x+=1
+        return dynamic(x/2)
+    else:
         count += 1
+        return dynamic(x+1)
+
+#보텀업 방식
+def bottom_up(x):
+    count=0
+    dp=[0]*100
+    dp[0]=1
+    dp[1]=5
+
+print(dynamic(x))
